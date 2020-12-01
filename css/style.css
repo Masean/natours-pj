@@ -64,7 +64,7 @@ body {
   font-weight: 400;
   letter-spacing: 35px;
   animation: moneInLeft 1s ease-out;
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
 }
 
 .heading-primary-sub {
@@ -73,7 +73,7 @@ body {
   font-weight: 700;
   letter-spacing: 17.4px;
   animation: moneInRight 1s ease-out;
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
 
 
 }
