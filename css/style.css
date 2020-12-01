@@ -63,10 +63,8 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
-  animation-name: moneInLeft;
-  animation-duration: 1s;
+  animation: moneInLeft 1s ease-out 2s;
   /* animation-delay: 2s; */
-  animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
@@ -74,9 +72,8 @@ body {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.4px;
-  animation-name: moneInRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation: moneInRight 1s ease-out 2s;
+  /* animation-delay: 2s; */
 
 
 }
