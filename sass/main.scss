@@ -2,6 +2,9 @@ $color-primary: #9303A7;
 $color-primary-light: #AA00A2 ;
 $color-primary-dark: #8106A9 ;
 
+$color-secondary: #777;
+$color-tertiary: #fff;
+
 *,
 *::after,
 *::before{
@@ -19,7 +22,7 @@ body {
   font-weight: 400;
   /* font-size: 1.6rem; */
   line-height: 1.7;
-  color: #777;
+  color: $color-secondary;
   padding: 3rem;
 
   box-sizing: border-box;
@@ -30,8 +33,8 @@ body {
   height: 95vh;
   background-image: linear-gradient(
     to right bottom,
-    rgba(170, 0, 162, 0.8),
-    rgba(128, 6, 169, 0.8)),
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)),
     url(../img/hero.jpg);
   background-size: cover ;
   background-position: top;
@@ -59,7 +62,7 @@ body {
   text-align: center;
 }
 .heading-primary {
-  color: #fff;
+  color: $color-tertiary;
   text-transform: uppercase;
   margin-bottom: 6rem;
 }
@@ -156,8 +159,8 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
-  color: #777;
+  background-color: $color-tertiary;
+  color: $color-secondary;
 }
 
 .btn::after {
@@ -174,7 +177,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: #fff;
+  background-color: $color-tertiary;
 }
 
 .btn:hover::after {
