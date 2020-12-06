@@ -1,11 +1,6 @@
-/*
-COLORS:
-
-Light green: #AA00A2
-Medium green: #9303A7
-Dark green: #8106A9
-
-*/
+$color-primary: #9303A7;
+$color-primary-light: #AA00A2 ;
+$color-primary-dark: #8106A9 ;
 
 *,
 *::after,
@@ -18,7 +13,7 @@ Dark green: #8106A9
 html {
   font-size: 62.5%;
 }
-
+ 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
