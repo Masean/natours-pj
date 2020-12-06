@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Masean/natours-pj/issues"
   },
-  "homepage": "https://github.com/Masean/natours-pj#readme"
+  "homepage": "https://github.com/Masean/natours-pj#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
 }
