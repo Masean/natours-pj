@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: $grid-color-secondary;
   margin: 0 auto;
 
   &:not(:last-child) {
@@ -10,7 +9,6 @@
   @include clearfix;
 
   [class^="col-"] {
-    background-color: $grid-color-primary;
     float: left;
 
     &:not(:last-child) {
@@ -23,24 +21,5 @@
      width: calc((100% - #{$gutter-horizontal}) / 2);
   }
 
-  .col-1-of-3 {
-    width: calc((100% - #{$gutter-horizontal} * 2) / 3);
- }
-
- .col-2-of-3 {
-  width: calc( 2 * ((100% - #{$gutter-horizontal} * 2) / 3) + #{$gutter-horizontal});
-}
-
-  .col-1-of-4 {
-    width: calc((100% - #{$gutter-horizontal} *  3) / 4);
- }
-
- .col-2-of-4 {
-  width: calc( 2 * ((100% - #{$gutter-horizontal} * 3) / 4) + #{$gutter-horizontal});
-}
-
-.col-3-of-4 {
-  width: calc( 3 * ((100% - #{$gutter-horizontal} * 3) / 4) + #{$gutter-horizontal} * 2);
-}
 
 }
