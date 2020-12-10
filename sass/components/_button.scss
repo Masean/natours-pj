@@ -29,11 +29,23 @@
   &--white {
     background-color: $color-tertiary;
     color: $color-secondary;
-  
+
     &::after {
       background-color: $color-tertiary;
     }
+
   }
+
+  &--purple {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    color: $color-tertiary;
+
+    &::after {
+      background-color: $color-primary-light;
+    }
+
+  }
+  
   
   &::after {
     content: "";

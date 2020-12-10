@@ -28,9 +28,22 @@
       transform: rotateY(-180deg); 
 
       &-1 {
-        background-image: linear-gradient(to right bottom, $color-card-secondary-light, $color-card-secondary-darck);
+        background-image: linear-gradient(to right bottom,
+        $color-card-primary-light,
+        $color-card-primary-dark);
       }
-  
+
+      &-2 {
+        background-image: linear-gradient(to right bottom,
+        $color-card-secondary-light,
+        $color-card-secondary-dark);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom,
+        $color-card-tertiary-light,
+        $color-card-tertiary-dark);
+      }
     }
   
   }
@@ -53,16 +66,24 @@
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
 
     &--1 {
-        background-image: linear-gradient(to right bottom, $color-card-secondary-light, $color-card-secondary-darck),
+        background-image: linear-gradient(to right bottom,
+        $color-card-primary-light,
+        $color-card-primary-dark),
          url(../img/nat-5.jpg);
     }
 
     &--2 {
-      background-image: url(../img/nat-6.jpg);
-    }
+      background-image: linear-gradient(to right bottom,
+      $color-card-secondary-light,
+      $color-card-secondary-dark),
+      url(../img/nat-6.jpg);
+ }
 
     &--3 {
-      background-image: url(../img/nat-7.jpg);
+      background-image: linear-gradient(to right bottom,
+      $color-card-tertiary-light,
+      $color-card-tertiary-dark),
+      url(../img/nat-7.jpg);
     }
 
   }
@@ -85,10 +106,22 @@
     box-decoration-break: clone;
     &--1 {
       background-image: linear-gradient(to right bottom,
-      rgba($color-card-secondary-light, .85),
-      rgba($color-card-secondary-darck, .85)),
-
+      rgba($color-card-primary-light, .75),
+      rgba($color-card-primary-dark, .75)),
     }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom,
+      rgba($color-card-secondary-light, .75),
+      rgba($color-card-secondary-dark, .75)),
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom,
+      rgba($color-card-tertiary-light, .75),
+      rgba($color-card-tertiary-dark, .75)),
+    }
+
   }
 
   &__details {
@@ -109,6 +142,34 @@
         }
       }
     }
+  }
+
+  // Back side styling
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    color: $color-tertiary;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 
 }  
