@@ -201,6 +201,29 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   transform: translateY(-0.5px); }
 
+.btn-top {
+  background-color: #fff;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 6rem;
+  right: 6rem;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s; }
+  .btn-top__link {
+    display: block;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #333; }
+  .btn-top:hover {
+    transform: translateY(-2px) scale(1.1); }
+  .btn-top:active, .btn-top:focus {
+    transform: translateY(-0.1rem); }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150ren;

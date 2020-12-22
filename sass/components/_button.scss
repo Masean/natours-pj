@@ -102,3 +102,35 @@
 
   }
 }
+
+.btn-top {
+  background-color:$color-tertiary;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom:6rem;
+  right: 6rem;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba($color-black, .5);
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-size: 3rem;
+    color: $color-secondary-3;
+  }
+
+  &:hover {
+    transform: translateY(-2px) scale(1.1);
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-0.1rem);
+  }
+
+}
