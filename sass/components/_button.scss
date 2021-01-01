@@ -117,6 +117,18 @@
   cursor: pointer;
   transition: all .3s;
 
+  @include respond(tab-port) {
+    bottom: 4rem;
+    right: 4rem;
+   }
+
+  @include respond(phone) {
+  bottom: 3rem;
+  right: 3rem;
+  }
+
+
+
   &__link {
     display: block;
     text-decoration: none;
